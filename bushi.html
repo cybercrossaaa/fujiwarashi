@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-cDAG0zcqTtOe-kCrbwE9D.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VE3DEYM24M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VE3DEYM24M');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徒士の出自 推定分布</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
+    <script src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { margin: 0; background-color: #fff; }
+        #root { min-height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="root">読み込み中...（しばらくお待ちください）</div>
+
+    <script type="text/babel">
+        const { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } = Recharts;
+        const { useState } = React;
+
+        const data = [
+            { name: "足軽頭・小頭", value: 22, color: "#c0392b", desc: "足軽部隊を率いた下級指揮官。徒士の直接的前身。" },
+            { name: "在地名主・村役人層", value: 18, color: "#e67e22", desc: "農村の有力者で兵農未分離期に武装した半士半農層。" },
+            { name: "土豪・地侍", value: 17, color: "#f1c40f", desc: "小規模な在地領主。戦国争乱で大名に従属し士分に編入。" },
+            { name: "足軽（徒歩戦闘員）", value: 15, color: "#27ae60", desc: "一般足軽が主君の代替わりや加増で徒士格に昇格。" },
+            { name: "中間・小者頭", value: 10, color: "#2980b9", desc: "奉公人の中で能力を認められ武士格へ昇進した者。" },
+            { name: "牢人・他家浪人", value: 8, color: "#8e44ad", desc: "没落した武家出身で新主に仕えて下士に取り立てられた者。" },
+            { name: "商工業者・職人出身", value: 5, color: "#16a085", desc: "兵站・鍛冶・大工など軍役に有用な職人が士分に列した例。" },
+            { name: "その他・不明", value: 5, color: "#95a5a6", desc: "記録不明・複合的出自など。" },
+        ];
+
+        const RADIAN = Math.PI / 180;
+        const renderCustomLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+            const r = innerRadius + (outerRadius - innerRadius) * 0.5;
+            const x = cx + r * Math.cos(-midAngle * RADIAN);
+            const y = cy + r * Math.sin(-midAngle * RADIAN);
+            return percent > 0.06 ? (
+                <text x={x} y={y} fill="white" textAnchor="middle" dominantBaseline="central" style={{ fontSize: '12px', fontWeight: 'bold' }}>
+                    {`${(percent * 100).toFixed(0)}%`}
+                </text>
+            ) : null;
+        };
+
+        function App() {
+            const [active, setActive] = useState(null);
+
+            return (
+                <div style={{ fontFamily: "sans-serif", maxWidth: "100%", padding: '15px', boxSizing: 'border-box' }}>
+                    <h2 style={{ textAlign: "center", fontSize: '18px', margin: '0 0 5px 0' }}>
+                        徒士（かち）の戦国時代的出自 推定分布
+                    </h2>
+                    <p style={{ textAlign: "center", fontSize: '11px', color: "#666", marginBottom: '15px' }}>
+                        ※ 史料に基づく定性的推計
+                    </p>
+
+                    <div style={{ width: '100%', height: 320 }}>
+                        <ResponsiveContainer width="100%" height="100%">
+                            <PieChart>
+                                <Pie
+                                    data={data}
+                                    cx="50%"
+                                    cy="50%"
+                                    outerRadius={100}
+                                    dataKey="value"
+                                    labelLine={false}
+                                    label={renderCustomLabel}
+                                    onMouseEnter={(_, i) => setActive(i)}
+                                    onMouseLeave={() => setActive(null)}
+                                >
+                                    {data.map((entry, i) => (
+                                        <Cell
+                                            key={`cell-${i}`}
+                                            fill={entry.color}
+                                            opacity={active === null || active === i ? 1 : 0.45}
+                                        />
+                                    ))}
+                                </Pie>
+                                <Tooltip />
+                                <Legend layout="horizontal" align="center" verticalAlign="bottom" wrapperStyle={{fontSize: '11px'}} />
+                            </PieChart>
+                        </ResponsiveContainer>
+                    </div>
+
+                    <div style={{ overflowX: 'auto', marginTop: '20px' }}>
+                        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: '12px', minWidth: '400px' }}>
+                            <thead>
+                                <tr style={{ background: "#2c3e50", color: "white" }}>
+                                    <th style={{ padding: "8px" }}>出自</th>
+                                    <th style={{ padding: "8px" }}>割合</th>
+                                    <th style={{ padding: "8px" }}>説明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {data.map((d, i) => (
+                                    <tr key={i} style={{ background: i % 2 === 0 ? "#f9f9f9" : "#fff" }}>
+                                        <td style={{ padding: "8px", fontWeight: "bold", color: d.color }}>{d.name}</td>
+                                        <td style={{ padding: "8px", textAlign: "center" }}>{d.value}%</td>
+                                        <td style={{ padding: "8px", color: "#444" }}>{d.desc}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
