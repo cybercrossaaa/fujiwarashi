@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-cDAG0zcqTtOe-kCrbwE9D.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VE3DEYM24M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VE3DEYM24M');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimated Origins of Kachi</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
+    <script src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { margin: 0; background-color: #fff; }
+        #root { min-height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="root">Loading... (Please wait)</div>
+
+    <script type="text/babel">
+        const { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } = Recharts;
+        const { useState } = React;
+
+        const data = [
+            { name: "Ashigaru Commanders / Squad Leaders", value: 22, color: "#c0392b", desc: "Low-ranking commanders who led ashigaru (foot soldier) units. The direct predecessors of Kachi." },
+            { name: "Local Village Headmen / Officials", value: 18, color: "#e67e22", desc: "Influential rural figures; armed semi-samurai, semi-farmer class before the separation of warriors and farmers." },
+            { name: "Local Lords / Jizamurai", value: 17, color: "#f1c40f", desc: "Small-scale local lords. Incorporated into the samurai class after submitting to daimyo during the Sengoku period." },
+            { name: "Ashigaru (Foot Soldiers)", value: 15, color: "#27ae60", desc: "Common foot soldiers promoted to Kachi rank upon a lord's succession or increase in fief." },
+            { name: "Chugen / Komono (Attendants & Servants)", value: 10, color: "#2980b9", desc: "Servants whose abilities were recognized, leading to promotion to samurai status." },
+            { name: "Ronin (Masterless Samurai)", value: 8, color: "#8e44ad", desc: "Those from fallen samurai families who served new masters and were appointed as low-ranking samurai." },
+            { name: "Merchants / Artisans", value: 5, color: "#16a085", desc: "Artisans useful for military service (logistics, blacksmiths, carpenters) who were granted samurai status." },
+            { name: "Other / Unknown", value: 5, color: "#95a5a6", desc: "Unrecorded or mixed origins." },
+        ];
+
+        const RADIAN = Math.PI / 180;
+        const renderCustomLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+            const r = innerRadius + (outerRadius - innerRadius) * 0.5;
+            const x = cx + r * Math.cos(-midAngle * RADIAN);
+            const y = cy + r * Math.sin(-midAngle * RADIAN);
+            return percent > 0.06 ? (
+                <text x={x} y={y} fill="white" textAnchor="middle" dominantBaseline="central" style={{ fontSize: '12px', fontWeight: 'bold' }}>
+                    {`${(percent * 100).toFixed(0)}%`}
+                </text>
+            ) : null;
+        };
+
+        function App() {
+            const [active, setActive] = useState(null);
+
+            return (
+                <div style={{ fontFamily: "sans-serif", maxWidth: "100%", padding: '15px', boxSizing: 'border-box' }}>
+                    <h2 style={{ textAlign: "center", fontSize: '18px', margin: '0 0 5px 0' }}>
+                        Estimated Sengoku-era Origins of Kachi (Foot Samurai)
+                    </h2>
+                    <p style={{ textAlign: "center", fontSize: '11px', color: "#666", marginBottom: '15px' }}>
+                        * Qualitative estimation based on historical sources
+                    </p>
+
+                    <div style={{ width: '100%', height: 320 }}>
+                        <ResponsiveContainer width="100%" height="100%">
+                            <PieChart>
+                                <Pie
+                                    data={data}
+                                    cx="50%"
+                                    cy="50%"
+                                    outerRadius={100}
+                                    dataKey="value"
+                                    labelLine={false}
+                                    label={renderCustomLabel}
+                                    onMouseEnter={(_, i) => setActive(i)}
+                                    onMouseLeave={() => setActive(null)}
+                                >
+                                    {data.map((entry, i) => (
+                                        <Cell
+                                            key={`cell-${i}`}
+                                            fill={entry.color}
+                                            opacity={active === null || active === i ? 1 : 0.45}
+                                        />
+                                    ))}
+                                </Pie>
+                                <Tooltip />
+                                <Legend layout="horizontal" align="center" verticalAlign="bottom" wrapperStyle={{fontSize: '11px'}} />
+                            </PieChart>
+                        </ResponsiveContainer>
+                    </div>
+
+                    <div style={{ overflowX: 'auto', marginTop: '20px' }}>
+                        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: '12px', minWidth: '400px' }}>
+                            <thead>
+                                <tr style={{ background: "#2c3e50", color: "white" }}>
+                                    <th style={{ padding: "8px" }}>Origin</th>
+                                    <th style={{ padding: "8px" }}>Percentage</th>
+                                    <th style={{ padding: "8px" }}>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {data.map((d, i) => (
+                                    <tr key={i} style={{ background: i % 2 === 0 ? "#f9f9f9" : "#fff" }}>
+                                        <td style={{ padding: "8px", fontWeight: "bold", color: d.color }}>{d.name}</td>
+                                        <td style={{ padding: "8px", textAlign: "center" }}>{d.value}%</td>
+                                        <td style={{ padding: "8px", color: "#444" }}>{d.desc}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
