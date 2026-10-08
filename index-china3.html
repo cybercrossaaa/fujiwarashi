@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+<script data-goatcounter="https://fujiwarashi.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="88c70bfe-0177-498a-9e39-af70a9a1ecca"></script>
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-cDAG0zcqTtOe-kCrbwE9D.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VE3DEYM24M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VE3DEYM24M');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Canonical -->
+<link rel="canonical" href="https://www.fujiwarashi.org/index3.html">
+
+<!-- hreflang -->
+<link rel="alternate" hreflang="ja" href="https://www.fujiwarashi.org/index3.html">
+<link rel="alternate" hreflang="en" href="https://www.fujiwarashi.org/index-en3.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fujiwarashi.org/index-china3.html">
+<link rel="alternate" hreflang="ko" href="https://www.fujiwarashi.org/index-korea3.html">
+<link rel="alternate" hreflang="fr" href="https://www.fujiwarashi.org/index-french3.html">
+<link rel="alternate" hreflang="es" href="https://www.fujiwarashi.org/index-spanish3.html">
+<link rel="alternate" hreflang="pt" href="https://www.fujiwarashi.org/index-portuguese3.html">
+<link rel="alternate" hreflang="ru" href="https://www.fujiwarashi.org/index-russian3.html">
+<link rel="alternate" hreflang="de" href="https://www.fujiwarashi.org/index-ger3.html">
+<link rel="alternate" hreflang="ar" href="https://www.fujiwarashi.org/index-arabic3.html">
+<link rel="alternate" hreflang="x-default" href="https://www.fujiwarashi.org/index3.html">
+
+<meta name="description" content="藤原氏谱系与系谱的官方见解。桥本家基于史料的证明，以及对无根据谱系主张的警告。">
+<title>藤原氏谱系的真相 | 桥本家官方见解</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700;900&family=Shippori+Mincho:wght@400;600;800&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0d0d0d;
+  --paper: #f5f0e8;
+  --gold: #c49a2a;
+  --gold-light: #e8c96a;
+  --crimson: #8b1a1a;
+  --navy: #1a2340;
+  --navy-light: #253356;
+  --verified: #1a5c2e;
+  --probable: #1a3a6b;
+  --research: #4a3000;
+  --border: rgba(196,154,42,0.3);
+  --shadow: 0 4px 40px rgba(13,13,13,0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Serif JP', serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* ─── HERO ─── */
+.hero {
+  background: var(--navy);
+  color: #f5f0e8;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(196,154,42,0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(139,26,26,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '藤原';
+  position: absolute;
+  right: -0.1em;
+  bottom: -0.15em;
+  font-family: 'Shippori Mincho', serif;
+  font-size: clamp(200px, 35vw, 480px);
+  font-weight: 800;
+  color: rgba(196,154,42,0.04);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4vw;
+  border-bottom: 1px solid rgba(196,154,42,0.2);
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid rgba(196,154,42,0.4);
+  background: transparent;
+  color: rgba(245,240,232,0.6);
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif;
+  transition: all 0.2s;
+  letter-spacing: 0.05em;
+}
+.lang-btn.active, .lang-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6vw 4vw;
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(196,154,42,0.15);
+  border: 1px solid rgba(196,154,42,0.4);
+  color: var(--gold-light);
+  padding: 0.4rem 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 2rem;
+  width: fit-content;
+}
+
+.hero-badge::before {
+  content: '⚑';
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-family: 'Shippori Mincho', serif;
+  font-size: clamp(1.4rem, 8vw, 5rem); 
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  word-break: break-word;
+}
+
+
+h1 em {
+  font-style: normal;
+  color: var(--gold);
+  display: block;
+}
+
+.hero-lead {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-weight: 300;
+  color: rgba(245,240,232,0.75);
+  max-width: 560px;
+  line-height: 2;
+  margin-bottom: 3rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 0.9rem 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.25s;
+}
+
+.cta-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(196,154,42,0.3);
+}
+
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid rgba(245,240,232,0.3);
+  color: rgba(245,240,232,0.8);
+  padding: 0.9rem 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.25s;
+}
+
+.cta-secondary:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.hero-footer {
+  padding: 1.5rem 4vw;
+  display: flex;
+  gap: 1rem; 
+  flex-wrap: wrap; 
+  border-top: 1px solid rgba(196,154,42,0.2);
+  position: relative;
+  z-index: 10;
+}
+
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stat-num {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.65rem;
+  color: rgba(245,240,232,0.5);
+  letter-spacing: 0.1em;
+  margin-top: 0.3rem;
+}
+
+/* ─── ALERT BANNER ─── */
+.alert-banner {
+  background: var(--crimson);
+  color: #f5f0e8;
+  padding: 1rem 4vw;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.85rem;
+}
+
+.alert-banner strong {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* ─── SECTION BASE ─── */
+section {
+  padding: 5rem 4vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.section-label::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 40px;
+  background: var(--gold);
+  opacity: 0.4;
+}
+
+h2 {
+  font-family: 'Shippori Mincho', serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.section-sub {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(13,13,13,0.6);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  line-height: 1.9;
+}
+
+/* ─── 3-MIN SUMMARY ─── */
+.summary-section {
+  background: var(--navy);
+  color: #f5f0e8;
+  max-width: 100%;
+  padding: 5rem 4vw;
+}
+
+.summary-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(196,154,42,0.2);
+  margin-top: 3rem;
+  border: 1px solid rgba(196,154,42,0.2);
+}
+
+.summary-card {
+  background: var(--navy);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.summary-card:hover {
+  background: var(--navy-light);
+}
+
+.summary-num {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.summary-card h3 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f5f0e8;
+}
+
+.summary-card p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(245,240,232,0.6);
+  line-height: 1.8;
+}
+
+/* ─── EVIDENCE CARDS ─── */
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.evidence-card {
+  border: 1px solid var(--border);
+  padding: 1.8rem;
+  position: relative;
+  background: white;
+  transition: all 0.3s;
+}
+
+.evidence-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.evidence-card.verified::before { background: var(--verified); }
+.evidence-card.probable::before { background: var(--probable); }
+.evidence-card.research::before { background: var(--research); }
+
+.evidence-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.evidence-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.6rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+
+.verified .evidence-badge {
+  background: rgba(26,92,46,0.1);
+  color: var(--verified);
+  border: 1px solid rgba(26,92,46,0.3);
+}
+
+.probable .evidence-badge {
+  background: rgba(26,58,107,0.1);
+  color: var(--probable);
+  border: 1px solid rgba(26,58,107,0.3);
+}
+
+.research .evidence-badge {
+  background: rgba(74,48,0,0.1);
+  color: var(--research);
+  border: 1px solid rgba(74,48,0,0.3);
+}
+
+.evidence-year {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+
+.evidence-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.evidence-card p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(13,13,13,0.6);
+  line-height: 1.8;
+}
+
+.evidence-source {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.65rem;
+  color: var(--gold);
+  margin-top: 1rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.evidence-source::before {
+  content: '📜';
+  font-size: 0.7rem;
+}
+
+/* ─── TIMELINE ─── */
+.timeline {
+  position: relative;
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), rgba(196,154,42,0.1));
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 3rem 2.5rem;
+  animation: fadeInUp 0.5s both;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -0.55rem;
+  top: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 3px solid var(--gold);
+}
+
+.timeline-item.verified::before { border-color: var(--verified); }
+.timeline-item.probable::before { border-color: var(--probable); }
+
+.t-year {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+
+.t-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.t-body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(13,13,13,0.65);
+  line-height: 1.8;
+}
+
+.t-tag {
+  display: inline-block;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  margin-top: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.t-tag.v { background: rgba(26,92,46,0.1); color: var(--verified); }
+.t-tag.p { background: rgba(26,58,107,0.1); color: var(--probable); }
+
+/* ─── WARNING SECTION ─── */
+.warning-section {
+  background: #fdf6f0;
+  border-left: 6px solid var(--crimson);
+  padding: 3rem;
+  margin: 3rem 0;
+}
+
+.warning-section h2 {
+  color: var(--crimson);
+  margin-bottom: 1rem;
+}
+
+.warning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.warning-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.warning-icon {
+  font-size: 1.5rem;
+}
+
+.warning-item h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--crimson);
+}
+
+.warning-item p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(13,13,13,0.65);
+  line-height: 1.8;
+}
+
+/* ─── PROOF TIMELINE SECTION ─── */
+.proof-section {
+  background: white;
+  padding: 5rem 4vw;
+  max-width: 100%;
+}
+
+.proof-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ─── MULTILINGUAL ─── */
+.multilingual-bar {
+  background: var(--gold);
+  padding: 1rem 4vw;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.8rem;
+  color: var(--navy);
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+
+.multilingual-bar a {
+  color: var(--navy);
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--navy);
+  transition: all 0.2s;
+  font-size: 0.72rem;
+}
+
+.multilingual-bar a:hover {
+  background: var(--navy);
+  color: var(--gold);
+}
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--ink);
+  color: rgba(245,240,232,0.5);
+  padding: 3rem 4vw;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.footer-logo {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  color: rgba(245,240,232,0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--gold); }
+
+/* ─── STICKY NAV ─── */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(26,35,64,0.97);
+  backdrop-filter: blur(10px);
+  padding: 0.8rem 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  border-bottom: 1px solid rgba(196,154,42,0.2);
+}
+
+.sticky-nav.visible { transform: translateY(0); }
+
+.sticky-nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.sticky-nav-links a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(245,240,232,0.7);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.sticky-nav-links a:hover { color: var(--gold); }
+
+/* ─── DIVIDER ─── */
+.divider {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+  .summary-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .hero-footer { gap: 1.5rem; }
+  .hero-main { padding-top: 3rem; }
+  .sticky-nav-links { display: none; }
+  .warning-section { padding: 1.5rem; }
+}
+
+/* ─── SHARE BAR ─── */
+.share-bar {
+  position: fixed;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 500;
+}
+
+.share-btn {
+  width: 40px;
+  height: 40px;
+  background: var(--navy);
+  border: 1px solid rgba(196,154,42,0.3);
+  color: rgba(245,240,232,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.share-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .share-bar {
+    display: none;
+  }
+}
+
+/* ── 使用条款部分 ── */
+.terms-section {
+  background: #0d0d0d;
+  color: #c8c0b0;
+  font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', Georgia, serif;
+  padding: 80px 24px 64px;
+  border-top: 1px solid #2a2a2a;
+}
+
+.terms-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  color: #8b7355;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.terms-heading {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: #e8dcc8;
+  margin: 0 0 6px;
+  letter-spacing: 0.05em;
+}
+
+.terms-meta {
+  font-size: 0.8rem;
+  color: #6a6050;
+  margin-bottom: 48px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.05em;
+}
+
+/* 各条文 */
+.terms-article {
+  border-left: 2px solid #2e2820;
+  padding: 0 0 36px 24px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.terms-article:last-of-type {
+  border-left: 2px solid transparent;
+}
+
+.terms-article-num {
+  font-family: 'Courier New', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: #7a6a50;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.terms-article-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #d4c8a8;
+  margin: 0 0 12px;
+  letter-spacing: 0.06em;
+}
+
+.terms-article p {
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: #b0a898;
+  margin: 0;
+}
+
+.terms-article strong {
+  color: #d4c8a8;
+}
+
+/* 列表 */
+.terms-list {
+  margin: 12px 0 0 0;
+  padding-left: 1.4em;
+  font-size: 0.87rem;
+  line-height: 1.85;
+  color: #a09888;
+}
+
+.terms-list li {
+  margin-bottom: 6px;
+}
+
+/* 法律声明框 */
+.terms-legal-box {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #161210;
+  border: 1px solid #3a2e20;
+  border-left: 3px solid #8b6914;
+  padding: 20px 24px;
+  border-radius: 2px;
+  margin: 40px 0 32px;
+  font-size: 0.84rem;
+  line-height: 1.85;
+  color: #c0a870;
+}
+
+.terms-legal-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* 页脚注释 */
+.terms-footer-note {
+  font-size: 0.75rem;
+  color: #5a5040;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.04em;
+  margin-top: 8px;
+  text-align: right;
+}
+</style>
+
+</head>
+<body>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav" id="stickyNav">
+  <div class="logo">桥本家 | 藤原氏谱系</div>
+  <div class="sticky-nav-links">
+    <a href="#summary">三分钟了解</a>
+    <a href="#evidence">证据一览</a>
+    <a href="#timeline">谱系年表</a>
+    <a href="#warning">警告</a>
+    <a href="index.html">详细版</a>
+  </div>
+</nav>
+
+<!-- SHARE BAR -->
+<div class="share-bar">
+  <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://fujiwarashi.org&text=藤原氏谱系的真相 | 桥本家官方见解" target="_blank" title="在X(Twitter)上分享">𝕏</a>
+  <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://fujiwarashi.org" target="_blank" title="在Facebook上分享">f</a>
+  <a class="share-btn" href="#" onclick="navigator.clipboard.writeText(location.href); alert('URL已复制'); return false;" title="复制URL">🔗</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <nav class="hero-nav">
+    <div class="logo">FUJIWARASHI.ORG</div>
+    <div class="lang-switch">
+      <a class="lang-btn" href="index.html">日本語</a>
+      <a class="lang-btn" href="index-en.html">EN</a>
+      <a class="lang-btn" href="index-ger.html">DE</a>
+      <a class="lang-btn" href="index-portuguese.html">PO</a>
+       <a class="lang-btn" href="index-french.html">FR</a>
+       <a class="lang-btn" href="index-russian.html">RU</a>
+             <a class="lang-btn" href="index-korea.html">KO</a>
+                   <a class="lang-btn" href="index-spanish.html">ES</a>
+<a class="lang-btn active">中文</a>
+                      <a class="lang-btn" href="index-arabic.html">AR</a>
+ </div>
+  </nav>
+
+  <div class="hero-main">
+    <div class="hero-badge">桥本家 官方声明 — 2026年公布</div>
+    <h1>藤原氏谱系的<br><em>史料真相</em>
+    </h1>
+    <p class="hero-lead">无史料根据的“藤原氏后裔”自称，正被用于选举、商业及社会活动中的权威包装。桥本家基于126件以上的一手史料，在此公示事实。</p>
+    <div class="hero-cta-group">
+      <a href="#summary" class="cta-primary">▼ 三分钟阅读摘要</a>
+      <a href="index-china2.html" class="cta-secondary">阅读详细版 →</a>
+    </div>
+  </div>
+
+  <div class="hero-footer">
+    <div class="hero-stat">
+      <span class="hero-stat-num">15+</span>
+      <span class="hero-stat-label">已确认一手史料件数</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">1415</span>
+      <span class="hero-stat-label">最早的在当地记录（年）</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">1874</span>
+      <span class="hero-stat-label">行政认证（明治7年）</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">90%</span>
+      <span class="hero-stat-label">江户时期系图的粉饰率（学界定论）</span>
+    </div>
+  </div>
+</header>
+
+<!-- ALERT -->
+<div class="alert-banner">
+  <span>⚠</span>
+  <span><strong>重要：</strong>利用缺乏史料依据的谱系主张来获取权威、经济利益或社会利益，可能会引发赠品表示法、不正当竞争防止法上的问题，并对第三方造成不利影响。</span>
+</div>
+
+<!-- 3-MIN SUMMARY -->
+<div class="summary-section" id="summary">
+  <div class="summary-inner">
+    <div class="section-label">3分钟摘要</div>
+    <h2 style="color:#f5f0e8;">本网站传达的<span style="color:var(--gold)">4个事实</span></h2>
+    <p class="section-sub" style="color:rgba(245,240,232,0.6);">在阅读复杂的史料之前，请先确认核心要点。
+    </p>
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="summary-num">①</div>
+        <h3>桥本家是经行政机关认证的一乘院领士族</h3>
+        <p>根据明治7年（1874年）的《家禄奉还愿》（奈良县立图书信息馆藏），经两名副户长加盖官印，由国家机构独立认证。行政台账中记载其为发志院村唯一的士族。</p>
+      </div>
+      <div class="summary-card">
+        <div class="summary-num">②</div>
+        <h3>中世纪史料中独立记载着"桥本"</h3>
+        <p>《大乘院寺社杂事记》（1496年）中将"西园寺·桥本"并列记载为犹子。这是后世无法伪造的兴福寺门迹官方日记，是桥本家被制度性地纳入公家网络的证据。</p>
+      </div>
+      <div class="summary-card">
+        <div class="summary-num">③</div>
+        <h3>江户时期谱系图九成经过粉饰——学术定论</h3>
+        <p>由丰田武、太田亮等人在20世纪70年代的研究确立。在自称"藤原氏后裔"的家系图中，能够得到一手史料佐证的极为少数。</p>
+      </div>
+      <div class="summary-card">
+        <div class="summary-num">④</div>
+        <h3>无根据的自称会引发社会与法律问题</h3>
+        <p>可能使选民、消费者、竞争者蒙受不利。桥本家基于外观法理与诚信原则，公示"不允许任何利用无根据谱系主张"的立场。</p>
+      
+      <h3 id="gutaitei"> 具体示例</h3>
+<p><b>根据某解说：</b><br>大久保利通为藤原氏后裔这一主张的可信度，从系图上的可信性（嫡流/旁系）来看约为10-20%。从生物学血缘关系（含旁系）来看约为15-30%（反映了封闭身份制度、地理条件以及"半数说"依据的脆弱性）。
+<br>参考：自20世纪70-80年代起，历史学者和专家就指出，江户时代武士中缺乏一手资料（独立性）的谱系过多（90%没有一手资料）。
+<br><b>依据：</b>疑点较多的原因：大久保氏出身萨摩藩下级武士（御小姓与）门第（相当于其他藩的徒士），缺乏能追溯至藤原氏的可靠史料。在试图提高家格的中世及近世武家中，自称名门贵族（如藤原氏）后裔的现象十分普遍。萨摩藩下级武士的家族中，几乎没有能证实与藤原氏有血缘关系的同时代史料。
+<br>可能性并非为零的理由：虽然存在大久保氏自称"藤原姓"的记录，理论上藤原氏一族在中世迁至九州，随时代变迁成为地方武士，其后裔定居萨摩的可能性并非完全为零。但要证明数百年前的血缘关系极为困难。
+<br><b>结论：</b>即使作为家族传承有"自称藤原氏后裔"的事实，但要从历史学上证明实际的血统联系非常困难，因此可信度不得不说是低的。考虑到许多武家都自称名门后裔，该主张也极有可能是"用于显示家格的称号"。</p>
+<p><b>根据某解说：</b>指出"缺乏一手资料"的学者比例：虽无严格统计，但对谱系进行史料批判的专家大多数（大约70-90%的专业论考中都视一手史料缺失为问题）——这是一个现实的估算。</p>
+
+<section id="goshomaki">
+  <h2>📌 近世富商自称藤原氏后裔的案例与现代评价</h2>
+
+  <p>江户时代，一部分经济上崛起的富商阶层编造并散布自称"藤原氏后裔"的谱系，是历史学上众所周知的现象。代表性案例包括三井家、安田家、住友家、鸿池家。本节将整理这些谱系主张的史料可信度及其在现代的法律与社会评价。
+  </p>
+
+  <blockquote>⚠️ 本节的记述并非旨在批判特定企业或团体当前的经营活动，而是将"缺乏史料依据的谱系主张被用于权威化的历史案例"作为学术考察对象。
+  </blockquote>
+
+  <h3>1. 主要富商的藤原氏后裔主张及其史料评价</h3>
+
+  <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%;">
+    <thead>
+      <tr style="background:#f0f0f0;">
+        <th>家族名</th>
+        <th>主张的系统</th>
+        <th>谱系编制时期</th>
+        <th>史料可信度（推定）</th>
+        <th>确定性</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>三井家</td>
+        <td>藤原北家/藤原秀乡流等</td>
+        <td>江户中期至后期整理</td>
+        <td>约10~15%</td>
+        <td>🔍 假说阶段</td>
+      </tr>
+      <tr>
+        <td>住友家</td>
+        <td>藤原氏（具体系统有诸多说法）</td>
+        <td>江户中期整理</td>
+        <td>？%（有从清华家过继养子的信息？）</td>
+        <td>🔍 假说阶段</td>
+      </tr>
+      <tr>
+        <td>鸿池家</td>
+        <td>源氏系/藤原系（两说并存）、鸿池新六为山中鹿介之子</td>
+        <td>江户前期至中期整理</td>
+        <td>约10~15%</td>
+        <td>🔍 假说阶段</td>
+      </tr>
+                        <tr>
+        <td>安田家</td>
+        <td>源氏系・藤原系（两种说法均有）・明治时期的“系谱造假”热潮</td>
+        <td>安田善次郎据称出身于越中国富山；当时财阀和暴发户为了增加权威而自称贵族或武家后裔，是一种常见现象。</td>
+        <td>约15～20%</td>
+        <td>🔍 假设阶段</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>根据丰田武、太田亮等人的研究（20世纪70年代）以及《姓氏家系大辞典》的见解，<strong>江户时代整理的谱系中约九成包含粉饰和事后追加</strong>，富商阶层的藤原氏后裔主张也可定位于相同脉络。这些家族向专门的"谱系师"支付报酬编制谱系，作为当时的惯行已广为人知。
+  </p>
+
+  <h3>2. 可信度低的主要原因</h3>
+
+  <ul>
+    <li><strong>一手史料不存在</strong>：从藤原氏全盛期（平安至镰仓期）到各富商崛起期（江户前期），几乎没有连续证明家族谱系的一手史料。</li>
+    <li><strong>时代断层</strong>：藤原氏嫡系的活动期（10~12世纪）与各富商的兴起期之间存在400~600年以上的空白，未能确认连接各世代的独立第三方史料。</li>
+    <li><strong>谱系的事后编纂</strong>：现存谱系图多为经济崛起后追溯整理而成，不存在本网站在证明桥本家时所重视的"第三方独立史料的同时代记录"。</li>
+    <li><strong>动机问题</strong>：商人在江户身份制度中地位低于武士、公家，将谱系连接到有权势的氏族直接关系到社会及经济利益，因而存在强烈动机。</li>
+  </ul>
+
+
+
+  <h4>⚠️ 可能产生问题的条件</h4>
+  <p>本网站所针对的并非"单纯的自称"，而是<strong>当前正在利用缺乏史料依据的谱系主张获取权威、经济利益或社会利益的行为</strong>。从这一观点出发，以下情况在现代也可成为评价对象。
+  </p>
+
+  <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%;">
+    <thead>
+      <tr style="background:#f0f0f0;">
+        <th>行为样态</th>
+        <th>可能适用的法令与概念</th>
+        <th>评价</th>
+      </tr>
+    </thead>
+ <tbody>
+  <tr>
+    <td>将系谱作为个人的历史或家世来介绍</td>
+    <td>—</td>
+    <td>✅ 原则上没有问题</td>
+  </tr>
+  <tr>
+    <td>声称为“正统后裔”以获取某种利益</td>
+    <td>诈骗罪、名誉毁损、不法行为等</td>
+    <td>❌ 可能会根据内容而产生问题</td>
+  </tr>
+  <tr>
+    <td>以系谱为依据宣传商品或服务的“档次”或“正统性”以吸引顾客</td>
+    <td>景品表示法（优良误认）等</td>
+    <td>❌ 很可能会有问题</td>
+  </tr>
+  <tr>
+    <td>政治家、公众人物或企业等为选举、社会信誉或自身利益而积极利用系谱</td>
+    <td>公职选举法、损害信用、诈骗罪、景品表示法（优良误认）等</td>
+    <td>❌ 很可能会有问题</td>
+  </tr>
+</tbody>
+  </table>
+
+  <h4>📌 与本网站立场的关系</h4>
+  <p>本网站（fujiwarashi.org）所提出的问题是：<strong>当缺乏史料依据的谱系主张与权威、经济及社会利益结合时，会对原本的后裔或第三方造成不利</strong>这一结构性问题。三井家等富商谱系作为其典型的历史案例，成为学术考察的对象。
+  </p>
+  <p>本网站所针对的，并非"是否可能为藤原氏子孙"，而是严格限定于<strong>"特定谱系线路是否存在史料依据"</strong>这一点。
+  </p>
+
+  <p style="font-size:0.9em; color:#555;">参考：丰田武《武家的系图》（1962年）、太田亮《姓氏家系大辞典》、丰田武/佐藤和彦《中世的武士团》（1972年）
+  </p>
+</section>
+
+
+</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="keizu">
+  ●最近的谱系图在此→<br>
+  <div class="scroll-box">
+    <img src="images/kakeizu11.png" alt="家系图" class="no-shrink" style="width: 100%; max-width: 500px; height: auto;">
+  </div>
+  <br><a href="images/kakeizu11.pdf">家系图PDF</a>
+  <br><a href="images/kakeizu12.pdf">家系图PDF</a>
+  
+  <br>●永世家禄（家禄奉还愿）资料在此→<br>
+  <div class="scroll-box">
+    <img src="images/eiseikaroku2.jpg" class="no-shrink" style="width: 100%; max-width: 500px; height: auto;">
+  </div>
+  <br><a href="images/1-30-2026.pdf">下载PDF</a>
+  
+  <br><br>●关于飞鸟井家与桥本藤一→<br>
+  <div class="scroll-box">
+    <img src="images/shiryo32.jpg" class="no-shrink" style="width: 100%; max-width: 500px; height: auto;">
+  </div>
+  <br>
+  <div class="scroll-box">
+    <img src="images/touichi1.jpg" class="no-shrink" style="width: 100%; max-width: 500px; height: auto;">
+    <br><a href="images/shiryo32.jpg">下载PDF</a>
+  <br><a href="images/touichi1.jpg">下载PDF</a>
+
+</div>
+</div>
+
+<!-- EVIDENCE SECTION -->
+<section id="evidence" class="fade-in">
+  <div class="section-label">证据</div>
+  <h2>已确定的史料证据</h2>
+  <p class="section-sub">以下均为通过独立第三方文献、行政文书及一手史料确认的事实，完全不包含桥本家单方面的自行申报。
+  </p>
+
+  <div class="evidence-grid">
+    <div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ 确定事实</div>
+      <div class="evidence-year">1874年</div>
+      <h3>家禄奉还愿——国家机构的认证</h3>
+      <p>附带两名副户长的行政官印。国家独立确认了发志院村唯一士族桥本兵作的身份。家禄相当于一乘院领地收入的约19%。</p>
+      <div class="evidence-source">奈良县立图书信息馆藏 / 胶片ID:811013157</div>
+    </div>
+
+<div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ 确定事实</div>
+      <div class="evidence-year">1496年</div>
+      <h3>大乘院寺社杂事记——犹子记录</h3>
+      <p>"桐野兄弟、西园寺、桥本为犹子"。兴福寺门迹的官方日记中，将"桥本"作为西洞院禅尼的犹子独立记载。此同时代史料否定了后世创作的可能。</p>
+      <div class="evidence-source">大乘院寺社杂事记 第11卷（明应五年）</div>
+    </div>
+
+    <div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ 确定事实</div>
+      <div class="evidence-year">1491年</div>
+      <h3>桥本中纳言——春日祭上卿的记录</h3>
+      <p>作为春日大社（藤原氏的氏族神社）祭礼的首席主持，"桥本中纳言"被记录在案。其官职与年代与桥本实叙（延德年间权中纳言）完全一致。</p>
+      <div class="evidence-source">大乘院寺社杂事记 第10卷（延德三年）</div>
+    </div>
+
+    <div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ 确定事实</div>
+      <div class="evidence-year">1582年</div>
+      <h3>多闻院日记——桥本弥六的实名记录</h3>
+      <p>天正10年，桥本弥六作为发心院的纳所担当被记录实名。此记载见于与桥本家无关的僧侣英俊的独立日记中。</p>
+      <div class="evidence-source">多闻院日记 第5卷（天正10年）</div>
+    </div>
+
+    <div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ 确定事实</div>
+      <div class="evidence-year">1415〜1427年</div>
+      <h3>发志院实弘——藤原北家闲院流的在地化</h3>
+      <p>室町家、公季流的实弘僧都在发志院定居。横田庄六反田的产量（四石八斗）与1492年账簿完全吻合，证明了制度的连续性。</p>
+      <div class="evidence-source">中世日本庄园史研究·角川日本地名大辞典</div>
+    </div>
+
+    <div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ 确定事实</div>
+      <div class="evidence-year">1692年</div>
+      <h3>正历寺"桥之院""桥之坊"——官方记录</h3>
+      <p>幕府与藩的寺社改帐中，"桥之院""桥之坊"被列为正式子院。此为第三方的官方审计记录。</p>
+      <div class="evidence-source">大和志料 上卷（元禄5年寺社改之帐）/ 国会图书馆 348-226イ</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TIMELINE SECTION -->
+<div class="proof-section" id="timeline">
+  <div class="proof-inner">
+    <div class="section-label">编年证据</div>
+    <h2>跨越600年的证据链</h2>
+    <p class="section-sub">各时代独立的第三方史料，证实了桥本家在同一地点——发志院的延续性。
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">应永22〜34年（1415〜1427年）</div>
+        <div class="t-title">发志院实弘——藤原北家闲院流定居发志院</div>
+        <p class="t-body">室町家、公季流的实弘僧都，担任发志院纳所以及横田庄六反田的耕作者。这是具有中央公家血统的人物首次在该地定居。</p>
+        <span class="t-tag v">✅ 确定</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">康正2年（1456年）</div>
+        <div class="t-title">长实（禅观房）——在大乘院御房中众署名</div>
+        <p class="t-body">在大乘院御房中众的起请文中作为第二名署名者捺印。经第三方编纂确认，其作为与辻家不同的独立人物被立为索引条目。</p>
+        <span class="t-tag v">✅ 确定</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">延德3年（1491年）</div>
+        <div class="t-title">桥本中纳言——担任春日祭上卿</div>
+        <p class="t-body">作为藤原氏族社——春日大社的首席主持被记录。确认与桥本实叙（西园寺流桥本家）的一致。</p>
+        <span class="t-tag v">✅ 确定</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">明应5年（1496年）</div>
+        <div class="t-title">"桥本"——作为犹子侍奉西洞院禅尼、一条经辅</div>
+        <p class="t-body">"桐野兄弟、西园寺、桥本为犹子"。作为西洞院禅尼的犹子侍奉左大臣的事实，被记录在兴福寺门迹的官方日记中。</p>
+        <span class="t-tag v">✅ 确定（2026年4月 通过索引独立确认）</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">天正10年（1582年）</div>
+        <div class="t-title">桥本弥六——在多闻院日记中被记录实名</div>
+        <p class="t-body">在与桥本家无关的僧侣日记中，作为发心院纳所担当登场。同年，桥本左马也被记录为祢宜。</p>
+        <span class="t-tag v">✅ 确定</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">元禄5年（1692年）</div>
+        <div class="t-title">"桥之院""桥之坊"——在寺社改帐中被正式记录</div>
+        <p class="t-body">在幕府与藩的官方审计记录（寺社改帐）中，作为正式院家登记在册。这是对从1582年至1647年衔接部分的补充独立证据。</p>
+        <span class="t-tag v">✅ 确定</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">嘉永3年（1850年）</div>
+        <div class="t-title">桥本兵作——在村方文书中以"年寄（知行）"被记录实名</div>
+        <p class="t-body">在〔凶作难涩人御救愿状〕中作为寄件人"年寄（知行）兵作"被记载。此系家禄奉还愿24年前的同时代独立证据。</p>
+        <span class="t-tag v">✅ 确定</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">明治7年（1874年）</div>
+        <div class="t-title">家禄奉还愿——国家进行的最终行政认证</div>
+        <p class="t-body">国家机关通过两名副户长的官印，认证了桥本兵作的士族身份。发志院村唯一的士族。家禄约为一乘院领地收入的19%。</p>
+        <span class="t-tag v">✅ 确定</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WARNING SECTION -->
+<section id="warning" style="max-width:100%; padding: 0 4vw 5rem;">
+  <div class="warning-section" style="max-width:1100px; margin: 0 auto;">
+    <div class="section-label" style="color:var(--crimson);">警告</div>
+    <h2>缺乏依据的谱系主张所造成的第三方损害</h2>
+    <p style="font-family:'Noto Sans JP',sans-serif; font-size:0.85rem; color:rgba(13,13,13,0.65); line-height:2; max-width:600px;">本网站的目的并非维护桥本家的权威，而是<strong>以保护因缺乏史料依据的主张而遭受不利的第三方为目的</strong>予以公开。
+    </p>
+    <div class="warning-grid">
+      <div class="warning-item">
+        <div class="warning-icon">🗳</div>
+        <h4>对选民的误导</h4>
+        <p>在选举公报或演说中，缺乏依据的名门血统可能被用作博取信任的根据，从而可能歪曲选民的理性判断。</p>
+      </div>
+      <div class="warning-item">
+        <div class="warning-icon">🏪</div>
+        <h4>对消费者及交易对象的误导</h4>
+        <p>在事业、商品或服务的宣传中进行缺乏依据的权威化，可能引发赠品表示法、不正当竞争防止法上的问题。</p>
+      </div>
+      <div class="warning-item">
+        <div class="warning-icon">⚖️</div>
+        <h4>对竞争者造成的不利</h4>
+        <p>正当经营者可能被迫与被虚假权威包装的竞争者展开不对等竞争。</p>
+      </div>
+      <div class="warning-item">
+        <div class="warning-icon">📚</div>
+        <h4>历史事实的歪曲</h4>
+        <p>缺乏依据的谱系主张被反复扩散，可能侵蚀公众的历史认知。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MULTILINGUAL BAR -->
+<div class="multilingual-bar">
+  <span>🌐 其他语言版本 / Available in:</span>
+<a href="index.html">Japanese</a>  
+<a href="index-en.html">English</a>
+  <a href="index-ger.html">Deutsch</a>
+  <a href="index-french.html">Français</a>
+    <a href="index-korea.html">Korea</a>
+      <a href="index-russian.html">Russian</a>
+      <a href="index-portuguese.html">Portuguese</a>
+  <a href="index-spanish.html">Español</a>
+    <a href="index-arabic.html">arabic</a>
+</div>
+
+<!-- ============================================================
+      Terms of Use Section — fujiwarashi.org
+      Usage: Insert this entire block just before the </main> tag,
+             or immediately before the footer.
+      CSS: Add the <style> block below to the existing site stylesheet.
+     ============================================================ -->
+
+<section id="terms" class="terms-section">
+  <div class="terms-inner">
+
+    <div class="section-label">TERMS OF USE</div>
+    <h2 class="terms-heading">使用条款</h2>
+    <p class="terms-meta">制定日期：2026年4月15日 — 桥本家 / fujiwarashi.org</p>
+
+    <!-- 第1条 -->
+    <div class="terms-article">
+      <div class="terms-article-num">第1条</div>
+      <h3 class="terms-article-title">网站的目的与定位</h3>
+      <p>本网站（fujiwarashi.org，以下简称“本网站”）由桥本家（以下简称“运营方”）运营，其唯一目的在于基于原始史料、行政文书及第三方独立文件，公示与谱系相关的事实。本网站所公示之内容，在学术、社会及法律语境中被定位为史实的记录。</p>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="terms-article">
+      <div class="terms-article-num">第2条</div>
+      <h3 class="terms-article-title">著作权与知识产权</h3>
+      <p>本网站上的文本、图版、谱系图、HTML结构及编辑作品（以下简称“内容”）的著作权归属于运营方。但是，国立国会图书馆、奈良县立图书信息馆等机构所藏原始史料的图像，应优先适用各机构制定的使用规定。</p>
+      <ul class="terms-list">
+        <li>为私人使用或教育目的而进行的引用，在明确标注出处（fujiwarashi.org）的情况下予以许可。</li>
+        <li>禁止以商业目的、选举活动或树立权威为目的，擅自转载、篡改或挪用的行为。</li>
+        <li>禁止将本网站内容用于加强缺乏根据的谱系主张之语境中，此等行为视为超出原本目的的使用。</li>
+      </ul>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="terms-article">
+      <div class="terms-article-num">第3条</div>
+      <h3 class="terms-article-title">关于史料引用与转用的注意事项</h3>
+      <p>本网站登载的史料与证据信息，均系<strong>仅限于证明桥本家谱系事实之目的</strong>而编辑、整理的。第三方若将其从上下文中剥离并转用，作为其他家族主张、商业宣传、政治权威化等依据的行为，可能违反《反不正当竞争法》《赠品标示法》等相关法律法规，从而引发法律问题。</p>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="terms-article">
+      <div class="terms-article-num">第4条</div>
+      <h3 class="terms-article-title">禁止事项</h3>
+      <p>用户不得实施下列行为：</p>
+      <ul class="terms-list">
+        <li>篡改、伪造本网站内容，并冒充运营方的官方公示进行传播的行为。</li>
+        <li>以补强或正当化缺乏史料根据的谱系主张为目的，引用或转用本网站信息的行为。</li>
+        <li>对本网站进行非法访问、使服务器过载、通过爬虫大量获取数据等技术妨害行为。</li>
+        <li>冒用运营方名称或本网站URL，使第三方产生误解的行为。</li>
+        <li>其他损害运营方合法权益及第三方利益的行为。</li>
+      </ul>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="terms-article">
+      <div class="terms-article-num">第5条</div>
+      <h3 class="terms-article-title">免责事项</h3>
+      <p>运营方不对本网站信息的完整性、最新性及对特定目的的适应性作任何保证。本网站内容基于目前可获取的原始史料范围内的解释，可能因新史料的发现或解读的进展而更新。对于因浏览或使用本网站而产生的任何损害，除运营方存在故意或重大过失的情形外，运营方不承担责任。</p>
+    </div>
+
+    <!-- 第6条 -->
+    <div class="terms-article">
+      <div class="terms-article-num">第6条</div>
+      <h3 class="terms-article-title">外部链接与引用来源</h3>
+      <p>本网站引用了国立国会图书馆、奈良县立图书信息馆、春日大社、正历寺等公共机构收藏及公开的资料。对于这些外部机构的网站或资料内容，运营方不承担任何责任。外部链接站点的使用规约及著作权规定，遵循各机构自身的规定。</p>
+    </div>
+
+    <!-- 第7条 -->
+    <div class="terms-article">
+      <div class="terms-article-num">第7条</div>
+      <h3 class="terms-article-title">条款的变更</h3>
+      <p>运营方可能因法律法规修订、社会形势变化、史料研究进展等事由，在不事先通知的情况下修改本条款。修改后的条款自登载于本页面之时起生效，修改后若继续使用本网站，即视为同意修改后的条款。</p>
+    </div>
+
+    <!-- 第8条 -->
+    <div class="terms-article">
+      <div class="terms-article-num">第8条</div>
+      <h3 class="terms-article-title">适用法律与管辖法院</h3>
+      <p>本条款的解释适用日本法律。因使用本网站而产生的一切争议，以奈良地方法院为第一审专属协议管辖法院。</p>
+    </div>
+
+    <!-- 法律声明框 -->
+    <div class="terms-legal-box">
+      <span class="terms-legal-icon">⚖️</span>
+      <div>
+        <strong>法律公示</strong>：本网站系桥本家基于外观法理与诚信原则公示的官方见解。对于利用缺乏史料根据的谱系主张以获取权威地位、经济利益或社会利益的行为，运营方保留采取必要法律措施的权利。
+      </div>
+    </div>
+
+    <p class="terms-footer-note">© 桥本家 2026 — fujiwarashi.org　有关本条款的咨询，请通过本网站公示内容予以确认。</p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">桥本家 | 藤原氏谱系官方见解</div>
+      <p>本网站是由桥本家运营的官方见解网站。所载史料均基于第三方独立文书、行政文书及一手史料，并已在国会图书馆等处确认实物。</p>
+      <br>
+      Mail：<a href="mailto:info@fujiwarashi.org">info@fujiwarashi.org</a>
+      <p>© 桥本家 2026 — fujiwarashi.org</p>
+    </div>
+    <div class="footer-links">
+      <a href="index-china2.html">📄 详细版（全文）</a>
+      <a href="index-en.html">🌐 English version</a>
+      <a href="#evidence">📜 证据一览</a>
+      <a href="#timeline">📅 谱系年表</a>
+      <a href="#warning">⚠️ 警告部分</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Sticky nav
+const stickyNav = document.getElementById('stickyNav');
+window.addEventListener('scroll', () => {
+  stickyNav.classList.toggle('visible', window.scrollY > window.innerHeight * 0.8);
+});
+
+// Fade in on scroll
+const fadeEls = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+    }
+  });
+}, { threshold: 0.1 });
+fadeEls.forEach(el => observer.observe(el));
+
+// Smooth anchor
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "547f76c41a4f4065bf3b1f312dd3f727"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
