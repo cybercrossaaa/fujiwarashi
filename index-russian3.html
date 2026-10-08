@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<script data-goatcounter="https://fujiwarashi.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="88c70bfe-0177-498a-9e39-af70a9a1ecca"></script>
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-cDAG0zcqTtOe-kCrbwE9D.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VE3DEYM24M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VE3DEYM24M');
+</script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Canonical -->
+<link rel="canonical" href="https://www.fujiwarashi.org/index3.html">
+
+<!-- hreflang -->
+<link rel="alternate" hreflang="ja" href="https://www.fujiwarashi.org/index3.html">
+<link rel="alternate" hreflang="en" href="https://www.fujiwarashi.org/index-en3.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fujiwarashi.org/index-china3.html">
+<link rel="alternate" hreflang="ko" href="https://www.fujiwarashi.org/index-korea3.html">
+<link rel="alternate" hreflang="fr" href="https://www.fujiwarashi.org/index-french3.html">
+<link rel="alternate" hreflang="es" href="https://www.fujiwarashi.org/index-spanish3.html">
+<link rel="alternate" hreflang="pt" href="https://www.fujiwarashi.org/index-portuguese3.html">
+<link rel="alternate" hreflang="ru" href="https://www.fujiwarashi.org/index-russian3.html">
+<link rel="alternate" hreflang="de" href="https://www.fujiwarashi.org/index-ger3.html">
+<link rel="alternate" hreflang="ar" href="https://www.fujiwarashi.org/index-arabic3.html">
+<link rel="alternate" hreflang="x-default" href="https://www.fujiwarashi.org/index3.html">
+
+<meta name="description" content="Официальная позиция по генеалогии рода Фудзивара. Историческое подтверждение Дома Хасимото на основе первоисточников и предупреждение против бездоказательных генеалогических притязаний.">
+<title>Правда о генеалогии Фудзивара | Официальная позиция Дома Хасимото</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700;900&family=Shippori+Mincho:wght@400;600;800&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0d0d0d;
+  --paper: #f5f0e8;
+  --gold: #c49a2a;
+  --gold-light: #e8c96a;
+  --crimson: #8b1a1a;
+  --navy: #1a2340;
+  --navy-light: #253356;
+  --verified: #1a5c2e;
+  --probable: #1a3a6b;
+  --research: #4a3000;
+  --border: rgba(196,154,42,0.3);
+  --shadow: 0 4px 40px rgba(13,13,13,0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Serif JP', serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* ─── HERO ─── */
+.hero {
+  background: var(--navy);
+  color: #f5f0e8;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(196,154,42,0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(139,26,26,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '藤原';
+  position: absolute;
+  right: -0.1em;
+  bottom: -0.15em;
+  font-family: 'Shippori Mincho', serif;
+  font-size: clamp(200px, 35vw, 480px);
+  font-weight: 800;
+  color: rgba(196,154,42,0.04);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4vw;
+  border-bottom: 1px solid rgba(196,154,42,0.2);
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid rgba(196,154,42,0.4);
+  background: transparent;
+  color: rgba(245,240,232,0.6);
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif;
+  transition: all 0.2s;
+  letter-spacing: 0.05em;
+}
+.lang-btn.active, .lang-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6vw 4vw;
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(196,154,42,0.15);
+  border: 1px solid rgba(196,154,42,0.4);
+  color: var(--gold-light);
+  padding: 0.4rem 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 2rem;
+  width: fit-content;
+}
+
+.hero-badge::before {
+  content: '⚑';
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-family: 'Shippori Mincho', serif;
+  font-size: clamp(1.4rem, 8vw, 5rem); 
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  word-break: break-word;
+}
+
+
+h1 em {
+  font-style: normal;
+  color: var(--gold);
+  display: block;
+}
+
+.hero-lead {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-weight: 300;
+  color: rgba(245,240,232,0.75);
+  max-width: 560px;
+  line-height: 2;
+  margin-bottom: 3rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 0.9rem 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.25s;
+}
+
+.cta-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(196,154,42,0.3);
+}
+
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid rgba(245,240,232,0.3);
+  color: rgba(245,240,232,0.8);
+  padding: 0.9rem 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.25s;
+}
+
+.cta-secondary:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.hero-footer {
+  padding: 1.5rem 4vw;
+  display: flex;
+  gap: 1rem; 
+  flex-wrap: wrap; 
+  border-top: 1px solid rgba(196,154,42,0.2);
+  position: relative;
+  z-index: 10;
+}
+
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stat-num {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.65rem;
+  color: rgba(245,240,232,0.5);
+  letter-spacing: 0.1em;
+  margin-top: 0.3rem;
+}
+
+/* ─── ALERT BANNER ─── */
+.alert-banner {
+  background: var(--crimson);
+  color: #f5f0e8;
+  padding: 1rem 4vw;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.85rem;
+}
+
+.alert-banner strong {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* ─── SECTION BASE ─── */
+section {
+  padding: 5rem 4vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.section-label::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 40px;
+  background: var(--gold);
+  opacity: 0.4;
+}
+
+h2 {
+  font-family: 'Shippori Mincho', serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.section-sub {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(13,13,13,0.6);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  line-height: 1.9;
+}
+
+/* ─── 3-MIN SUMMARY ─── */
+.summary-section {
+  background: var(--navy);
+  color: #f5f0e8;
+  max-width: 100%;
+  padding: 5rem 4vw;
+}
+
+.summary-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(196,154,42,0.2);
+  margin-top: 3rem;
+  border: 1px solid rgba(196,154,42,0.2);
+}
+
+.summary-card {
+  background: var(--navy);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.summary-card:hover {
+  background: var(--navy-light);
+}
+
+.summary-num {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.summary-card h3 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f5f0e8;
+}
+
+.summary-card p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(245,240,232,0.6);
+  line-height: 1.8;
+}
+
+/* ─── EVIDENCE CARDS ─── */
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.evidence-card {
+  border: 1px solid var(--border);
+  padding: 1.8rem;
+  position: relative;
+  background: white;
+  transition: all 0.3s;
+}
+
+.evidence-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.evidence-card.verified::before { background: var(--verified); }
+.evidence-card.probable::before { background: var(--probable); }
+.evidence-card.research::before { background: var(--research); }
+
+.evidence-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.evidence-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.6rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+
+.verified .evidence-badge {
+  background: rgba(26,92,46,0.1);
+  color: var(--verified);
+  border: 1px solid rgba(26,92,46,0.3);
+}
+
+.probable .evidence-badge {
+  background: rgba(26,58,107,0.1);
+  color: var(--probable);
+  border: 1px solid rgba(26,58,107,0.3);
+}
+
+.research .evidence-badge {
+  background: rgba(74,48,0,0.1);
+  color: var(--research);
+  border: 1px solid rgba(74,48,0,0.3);
+}
+
+.evidence-year {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+
+.evidence-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.evidence-card p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(13,13,13,0.6);
+  line-height: 1.8;
+}
+
+.evidence-source {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.65rem;
+  color: var(--gold);
+  margin-top: 1rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.evidence-source::before {
+  content: '📜';
+  font-size: 0.7rem;
+}
+
+/* ─── TIMELINE ─── */
+.timeline {
+  position: relative;
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), rgba(196,154,42,0.1));
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 3rem 2.5rem;
+  animation: fadeInUp 0.5s both;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -0.55rem;
+  top: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 3px solid var(--gold);
+}
+
+.timeline-item.verified::before { border-color: var(--verified); }
+.timeline-item.probable::before { border-color: var(--probable); }
+
+.t-year {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+
+.t-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.t-body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(13,13,13,0.65);
+  line-height: 1.8;
+}
+
+.t-tag {
+  display: inline-block;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  margin-top: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.t-tag.v { background: rgba(26,92,46,0.1); color: var(--verified); }
+.t-tag.p { background: rgba(26,58,107,0.1); color: var(--probable); }
+
+/* ─── WARNING SECTION ─── */
+.warning-section {
+  background: #fdf6f0;
+  border-left: 6px solid var(--crimson);
+  padding: 3rem;
+  margin: 3rem 0;
+}
+
+.warning-section h2 {
+  color: var(--crimson);
+  margin-bottom: 1rem;
+}
+
+.warning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.warning-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.warning-icon {
+  font-size: 1.5rem;
+}
+
+.warning-item h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--crimson);
+}
+
+.warning-item p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(13,13,13,0.65);
+  line-height: 1.8;
+}
+
+/* ─── PROOF TIMELINE SECTION ─── */
+.proof-section {
+  background: white;
+  padding: 5rem 4vw;
+  max-width: 100%;
+}
+
+.proof-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ─── MULTILINGUAL ─── */
+.multilingual-bar {
+  background: var(--gold);
+  padding: 1rem 4vw;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.8rem;
+  color: var(--navy);
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+
+.multilingual-bar a {
+  color: var(--navy);
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--navy);
+  transition: all 0.2s;
+  font-size: 0.72rem;
+}
+
+.multilingual-bar a:hover {
+  background: var(--navy);
+  color: var(--gold);
+}
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--ink);
+  color: rgba(245,240,232,0.5);
+  padding: 3rem 4vw;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.footer-logo {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  color: rgba(245,240,232,0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--gold); }
+
+/* ─── STICKY NAV ─── */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(26,35,64,0.97);
+  backdrop-filter: blur(10px);
+  padding: 0.8rem 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  border-bottom: 1px solid rgba(196,154,42,0.2);
+}
+
+.sticky-nav.visible { transform: translateY(0); }
+
+.sticky-nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.sticky-nav-links a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(245,240,232,0.7);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.sticky-nav-links a:hover { color: var(--gold); }
+
+/* ─── DIVIDER ─── */
+.divider {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+  .summary-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .hero-footer { gap: 1.5rem; }
+  .hero-main { padding-top: 3rem; }
+  .sticky-nav-links { display: none; }
+  .warning-section { padding: 1.5rem; }
+}
+
+/* ─── SHARE BAR ─── */
+.share-bar {
+  position: fixed;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 500;
+}
+
+.share-btn {
+  width: 40px;
+  height: 40px;
+  background: var(--navy);
+  border: 1px solid rgba(196,154,42,0.3);
+  color: rgba(245,240,232,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.share-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .share-bar {
+    display: none;
+  }
+}
+
+/* ── Раздел Условия использования ── */
+.terms-section {
+  background: #0d0d0d;
+  color: #c8c0b0;
+  font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', Georgia, serif;
+  padding: 80px 24px 64px;
+  border-top: 1px solid #2a2a2a;
+}
+
+.terms-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  color: #8b7355;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.terms-heading {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: #e8dcc8;
+  margin: 0 0 6px;
+  letter-spacing: 0.05em;
+}
+
+.terms-meta {
+  font-size: 0.8rem;
+  color: #6a6050;
+  margin-bottom: 48px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.05em;
+}
+
+/* Каждая статья */
+.terms-article {
+  border-left: 2px solid #2e2820;
+  padding: 0 0 36px 24px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.terms-article:last-of-type {
+  border-left: 2px solid transparent;
+}
+
+.terms-article-num {
+  font-family: 'Courier New', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: #7a6a50;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.terms-article-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #d4c8a8;
+  margin: 0 0 12px;
+  letter-spacing: 0.06em;
+}
+
+.terms-article p {
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: #b0a898;
+  margin: 0;
+}
+
+.terms-article strong {
+  color: #d4c8a8;
+}
+
+/* Списки */
+.terms-list {
+  margin: 12px 0 0 0;
+  padding-left: 1.4em;
+  font-size: 0.87rem;
+  line-height: 1.85;
+  color: #a09888;
+}
+
+.terms-list li {
+  margin-bottom: 6px;
+}
+
+/* Блок правового уведомления */
+.terms-legal-box {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #161210;
+  border: 1px solid #3a2e20;
+  border-left: 3px solid #8b6914;
+  padding: 20px 24px;
+  border-radius: 2px;
+  margin: 40px 0 32px;
+  font-size: 0.84rem;
+  line-height: 1.85;
+  color: #c0a870;
+}
+
+.terms-legal-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Примечание в подвале */
+.terms-footer-note {
+  font-size: 0.75rem;
+  color: #5a5040;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.04em;
+  margin-top: 8px;
+  text-align: right;
+}
+</style>
+
+</head>
+<body>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav" id="stickyNav">
+  <div class="logo">Дом Хасимото | Генеалогия Фудзивара</div>
+  <div class="sticky-nav-links">
+    <a href="#summary">За 3 минуты</a>
+    <a href="#evidence">Доказательства</a>
+    <a href="#timeline">Хронология</a>
+    <a href="#warning">Предупреждение</a>
+    <a href="index.html">Подробная версия</a>
+  </div>
+</nav>
+
+<!-- SHARE BAR -->
+<div class="share-bar">
+  <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://fujiwarashi.org&text=Правда о генеалогии Фудзивара | Официальная позиция Дома Хасимото" target="_blank" title="Поделиться в X (Твиттер)">𝕏</a>
+  <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://fujiwarashi.org" target="_blank" title="Поделиться в Facebook">f</a>
+  <a class="share-btn" href="#" onclick="navigator.clipboard.writeText(location.href); alert('URL скопирован'); return false;" title="Копировать URL">🔗</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <nav class="hero-nav">
+    <div class="logo">FUJIWARASHI.ORG</div>
+    <div class="lang-switch">
+      <a class="lang-btn" href="index.html">日本語</a>
+      <a class="lang-btn" href="index-en.html">EN</a>
+      <a class="lang-btn" href="index-ger.html">DE</a>
+      <a class="lang-btn" href="index-portuguese.html">PO</a>
+       <a class="lang-btn" href="index-french.html">FR</a>
+       <a class="lang-btn" href="index-china.html">CH</a>
+             <a class="lang-btn" href="index-korea.html">KO</a>
+                   <a class="lang-btn" href="index-spanish.html">SP</a>
+      <a class="lang-btn active">RU</a>
+<a class="lang-btn" href="index-arabic.html">AR</a>
+    </div>
+  </nav>
+
+  <div class="hero-main">
+    <div class="hero-badge">Официальное заявление Дома Хасимото — Опубликовано в 2026 г.</div>
+    <h1>Историческая правда<br><em>генеалогии Фудзивара</em>
+    </h1>
+    <p class="hero-lead">Бездоказательные утверждения о «происхождении от рода Фудзивара» используются для придания авторитета на выборах, в бизнесе и общественной деятельности. Дом Хасимото раскрывает факты на основе более чем 126 первоисточников.</p>
+    <div class="hero-cta-group">
+      <a href="#summary" class="cta-primary">▼ Краткий обзор (3 мин.)</a>
+      <a href="index-russian2.html" class="cta-secondary">Подробная версия →</a>
+    </div>
+  </div>
+
+  <div class="hero-footer">
+    <div class="hero-stat">
+      <span class="hero-stat-num">15+</span>
+      <span class="hero-stat-label">Подтверждённых первоисточников</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">1415</span>
+      <span class="hero-stat-label">Самая ранняя местная запись</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">1874</span>
+      <span class="hero-stat-label">Административная сертификация (Мэйдзи 7)</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">90%</span>
+      <span class="hero-stat-label">Доля приукрашенных родословных эпохи Эдо</span>
+    </div>
+  </div>
+</header>
+
+<!-- ALERT -->
+<div class="alert-banner">
+  <span>⚠</span>
+  <span><strong>ВАЖНО:</strong> Использование генеалогических утверждений, не имеющих исторических доказательств, для получения авторитета, экономической выгоды или социальных преимуществ может привести к проблемам в соответствии с Законом о необоснованных премиях и вводящих в заблуждение представлениях, Законом о предотвращении недобросовестной конкуренции, а также причинить ущерб третьим лицам.</span>
+</div>
+
+<!-- 3-MIN SUMMARY -->
+<div class="summary-section" id="summary">
+  <div class="summary-inner">
+    <div class="section-label">3-МИНУТНОЕ РЕЗЮМЕ</div>
+    <h2 style="color:#f5f0e8;"><span style="color:var(--gold)">4 факта</span>, которые представляет этот сайт</h2>
+    <p class="section-sub" style="color:rgba(245,240,232,0.6);">Прежде чем углубляться в сложные исторические документы, ознакомьтесь с самой сутью.
+    </p>
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="summary-num">①</div>
+        <h3>Семья Хасимото — сидзоку владения Итидзё-ин, сертифицированная администрацией</h3>
+        <p>Независимо сертифицирована государственным органом в 1874 году с официальными печатями двух заместителей старосты деревни на основании «Кароку Хокан Нэгай» (Прошения о возврате наследственного жалованья), хранящегося в Библиотечно-информационном центре префектуры Нара. В административных реестрах зафиксировано, что семья была единственной сидзоку в деревне Хоссин-ин.</p>
+      </div>
+      <div class="summary-card">
+        <div class="summary-num">②</div>
+        <h3>«Хасимото» независимо зафиксировано в средневековых источниках</h3>
+        <p>В «Дайдзё-ин Дзися Дзацудзики» (1496 г.) «Сайондзи и Хасимото» записаны параллельно как юси (приёмные сыновья). Это официальный дневник мондзэки Кофуку-дзи, который невозможно подделать задним числом, что является доказательством институциональной интеграции семьи Хасимото в сеть придворной аристократии (кугэ).</p>
+      </div>
+      <div class="summary-card">
+        <div class="summary-num">③</div>
+        <h3>90% родословных периода Эдо приукрашены — академический консенсус</h3>
+        <p>Установлено исследованиями Такэси Тоёды и Акиры Оты в 1970-х годах. Среди генеалогий, претендующих на происхождение от «клана Фудзивара», лишь очень немногие могут быть подтверждены первичными источниками.</p>
+      </div>
+      <div class="summary-card">
+        <div class="summary-num">④</div>
+        <h3>Голословные заявления вызывают социальные и правовые проблемы</h3>
+        <p>Существует риск нанесения ущерба избирателям, потребителям и конкурентам. Основываясь на принципе видимости права и принципе добросовестности, семья Хасимото публично заявляет о своей позиции «не допускать какого-либо использования голословных генеалогических утверждений».</p>
+      
+      <h3 id="gutaitei"> Конкретные примеры</h3>
+<p><b>Согласно одному анализу:</b><br>Достоверность утверждения о том, что Тосимити Окубо является потомком клана Фудзивара, оценивается в 10-20% исходя из генеалогической надёжности (основная/боковая линия). Кроме того, вероятность биологического родства (включая боковые линии) оценивается в 15-30% (что отражает слабость доказательств из-за закрытой классовой системы, географических условий и «теории половины»).
+<br>Справка: С 1970-х–1980-х годов историки и эксперты указывали, что среди самураев периода Эдо слишком много родословных, не имеющих первичных источников (независимых) (90% не имеют первичных источников).
+<br><b>Основание для сомнений:</b> Семья Окубо была семьёй низкоранговых самураев (окосёято) в княжестве Сацума (эквивалент кати в других княжествах). Существует нехватка достоверных исторических источников, позволяющих проследить их родословную до клана Фудзивара. В средневековых и ранненовых воинских семьях было обычным делом претендовать на происхождение от известных аристократов (таких как Фудзивара) для повышения своего семейного статуса. Для семьи низкоранговых самураев в Сацума практически нет современных источников, подтверждающих кровное родство с кланом Фудзивара.
+<br>Причина, по которой возможность не равна нулю: Существуют записи, что семья Окубо носила фамилию «Фудзивара». Теоретическая возможность того, что ветвь клана Фудзивара, перебравшаяся на Кюсю в средние века, со временем стала местными воинами, а их потомки в конечном итоге обосновались в Сацума, не равна нулю. Однако доказать кровную связь через сотни лет чрезвычайно трудно.
+<br><b>Вывод:</b> Даже если факт семейной традиции «претендовать на происхождение от клана Фудзивара» существует, исторически доказать реальную генеалогическую связь очень трудно, поэтому достоверность неизбежно является низкой. Учитывая, что многие воинские семьи претендовали на знатное происхождение, это утверждение, скорее всего, также было «титулом для обозначения семейного статуса».</p>
+<p><b>Согласно одному анализу:</b> Доля учёных, указывающих на «отсутствие первичных источников»: Точной статистики не существует, но реалистичная оценка такова, что большинство специалистов, занимающихся источниковедческой критикой генеалогий (примерно 70-90% экспертных работ проблематизируют отсутствие первичных источников).</p>
+
+<section id="goshomaki">
+  <h2>📌 Случаи претензий крупных торговцев раннего Нового времени на происхождение от Фудзивара и их современная оценка</h2>
+
+  <p>Феномен, когда в период Эдо часть экономически возвысившегося слоя крупных торговцев создавала и распространяла родословные, претендующие на происхождение от «клана Фудзивара», хорошо известен в исторической науке. Типичными примерами являются семьи Мицуи, Семья Ясуда, Сумитомо и Конойкэ. В этом разделе систематизируется оценка исторической достоверности этих генеалогических утверждений и их правовая и социальная оценка в настоящее время.
+  </p>
+
+  <blockquote>⚠️ Описания в этом разделе не направлены на критику текущей деловой активности конкретных компаний или организаций, а представляют собой академическое рассмотрение как «исторических примеров, когда генеалогические утверждения, лишённые исторических доказательств, использовались для приобретения авторитета».
+  </blockquote>
+
+  <h3>1. Основные претензии крупных торговцев на происхождение от Фудзивара и их историческая оценка</h3>
+
+  <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%;">
+    <thead>
+      <tr style="background:#f0f0f0;">
+        <th>Семья</th>
+        <th>Заявленная линия</th>
+        <th>Время составления родословной</th>
+        <th>Примерная историческая достоверность</th>
+        <th>Определённость</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Мицуи</td>
+        <td>Фудзивара Хоккэ, возможно, линия Хидэсато</td>
+        <td>Составлена в середине-конце периода Эдо</td>
+        <td>Примерно 10–15%</td>
+        <td>🔍 Гипотетическая стадия</td>
+      </tr>
+      <tr>
+        <td>Сумитомо</td>
+        <td>Клан Фудзивара (существуют различные теории о конкретной линии)</td>
+        <td>Составлена в середине периода Эдо</td>
+        <td>?% (есть информация, указывающая на усыновление из семьи Сэйга?)</td>
+        <td>🔍 Гипотетическая стадия</td>
+      </tr>
+      <tr>
+        <td>Конойкэ</td>
+        <td>Линии Минамото и Фудзивара (существуют обе теории), Конойкэ Синроку — ребёнок Яманака Сиканосукэ</td>
+        <td>Составлена в начале-середине периода Эдо</td>
+        <td>Примерно 10–15%</td>
+        <td>🔍 Гипотетическая стадия</td>
+      </tr>
+          <tr>
+        <td>Семья Ясуда</td>
+        <td>Род Минамото / род Фудзивара (обе версии существуют) / В период Мэйдзи наблюдалась мода на «генеалогические подделки»</td>
+        <td>Ясуда Дзэндзиро, по некоторым данным, родом из Тоями, провинция Эттю; в то время было обычным явлением, когда дзайбацу и новые богатые выдавали себя за потомков аристократов или самураев, чтобы придать себе легитимность.</td>
+        <td>Примерно 15–20 %</td>
+        <td>🔍 Гипотетическая стадия</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Согласно результатам исследований Такэси Тоёды, Акиры Оты (1970-е гг.) и данным «Большого словаря японских фамилий и родословных», <strong>около 90% родословных, составленных в период Эдо, содержат приукрашивания или более поздние добавления</strong>, и претензии крупных торговцев на происхождение от Фудзивара находятся в том же контексте. Широко известно как обычай того времени, что эти семьи платили специализированным «генеалогам» за составление своих родословных древ.
+  </p>
+
+  <h3>2. Основные причины низкой достоверности</h3>
+
+  <ul>
+    <li><strong>Отсутствие первичных источников:</strong> От периода расцвета клана Фудзивара (периоды Хэйан — Камакура) до возвышения каждой купеческой семьи (начало периода Эдо) практически нет первичных источников, непрерывно доказывающих родословную.</li>
+    <li><strong>Хронологический разрыв:</strong> Между периодом активности основной линии Фудзивара (X–XII вв.) и подъёмом купеческих семей существует разрыв в 400–600 и более лет, и не подтверждено независимых источников третьих лиц, связывающих каждое поколение.</li>
+    <li><strong>Создание родословных задним числом:</strong> Многие из сохранившихся родословных были составлены задним числом после экономического возвышения семей, и отсутствует «современная запись независимыми третьими источниками», на чём этот сайт делает акцент при доказывании семьи Хасимото.</li>
+    <li><strong>Проблема мотивации:</strong> Торговцы в сословной системе периода Эдо находились ниже самураев и придворной аристократии, что создавало сильную мотивацию для подключения родословной к авторитетным кланам для получения прямых социальных и экономических выгод.</li>
+  </ul>
+
+
+
+  <h4>⚠️ Условия, при которых могут возникнуть проблемы</h4>
+  <p>Данный сайт проблематизирует не «простое самопровозглашение», а <strong>действие по получению в настоящее время авторитета, экономической выгоды или социальных преимуществ с использованием генеалогических утверждений, не имеющих исторических доказательств</strong>. С этой точки зрения следующие сценарии могут быть предметом оценки и в наши дни.
+  </p>
+
+  <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%;">
+    <thead>
+      <tr style="background:#f0f0f0;">
+        <th>Характер действия</th>
+        <th>Потенциально применимые законы/концепции</th>
+        <th>Оценка</th>
+      </tr>
+    </thead>
+<tbody>
+  <tr>
+    <td>Представление генеалогии как личной истории или происхождения</td>
+    <td>—</td>
+    <td>✅ В принципе проблем нет</td>
+  </tr>
+  <tr>
+    <td>Заявление о том, что вы «законный потомок», с целью получения выгоды</td>
+    <td>Мошенничество; клевета; деликтные правонарушения; и т.д.</td>
+    <td>❌ Может стать проблемой в зависимости от содержания</td>
+  </tr>
+  <tr>
+    <td>Продвижение товаров или услуг, опираясь на генеалогию, чтобы подчеркнуть их «статус» или «легитимность» и привлечь клиентов</td>
+    <td>Закон о недобросовестной рекламе (вводящие в заблуждение заявления о качестве); и т.д.</td>
+    <td>❌ Высокая вероятность возникновения проблем</td>
+  </tr>
+  <tr>
+    <td>Политики, публичные лица или компании активно используют генеалогию для выборов, социальной репутации или собственной выгоды</td>
+    <td>Закон о выборах; порча репутации; мошенничество; закон о недобросовестной рекламе (вводящие в заблуждение заявления о качестве); и т.д.</td>
+    <td>❌ Высокая вероятность возникновения проблем</td>
+  </tr>
+</tbody>
+  </table>
+
+  <h4>📌 Связь с позицией этого сайта</h4>
+  <p>Этот сайт (fujiwarashi.org) поднимает структурную проблему, когда <strong>генеалогические утверждения, лишённые исторических доказательств, будучи связанными с авторитетом, экономическими или социальными выгодами, причиняют ущерб истинным потомкам или третьим лицам</strong>. Родословные крупных торговцев, таких как Мицуи, служат типичными историческими примерами для этого академического рассмотрения.
+  </p>
+  <p>Что этот сайт проблематизирует, так это не «возможность быть потомком клана Фудзивара», а строго ограничивается пунктом <strong>«наличия или отсутствия исторических доказательств для конкретной генеалогической линии».</strong></p>
+
+  <p style="font-size:0.9em; color:#555;">Ссылки: Такэси Тоёда, «Родословные воинских семей» (1962); Акира Ота, «Большой словарь японских фамилий и родословных»; Такэси Тоёда и Кадзухико Сато, «Средневековые воинские отряды» (1972)
+  </p>
+</section>
+
+
+</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="keizu">
+  ●Недавняя родословная здесь→<br>
+  <div class="scroll-box">
+    <img src="images/kakeizu11.png" alt="Родословное древо" class="no-shrink" style="width: 100%; max-width: 500px; height: auto;">
+  </div>
+  <br><a href="images/kakeizu11.pdf">PDF родословного древа</a>
+  <br><a href="images/kakeizu12.pdf">PDF родословного древа</a>
+  
+  <br>●Документы по Эйсэй Кароку (Прошение о возврате наследственного жалованья) здесь→<br>
+  <div class="scroll-box">
+    <img src="images/eiseikaroku2.jpg" class="no-shrink" style="width: 100%; max-width: 500px; height: auto;">
+  </div>
+  <br><a href="images/1-30-2026.pdf">Скачать PDF</a>
+  
+  <br><br>●О семье Асукай и Хасимото Тоити→<br>
+  <div class="scroll-box">
+    <img src="images/shiryo32.jpg" class="no-shrink" style="width: 100%; max-width: 500px; height: auto;">
+  </div>
+  <br>
+  <div class="scroll-box">
+    <img src="images/touichi1.jpg" class="no-shrink" style="width: 100%; max-width: 500px; height: auto;">
+    <br><a href="images/shiryo32.jpg">Скачать PDF</a>
+  <br><a href="images/touichi1.jpg">Скачать PDF</a>
+
+</div>
+</div>
+
+
+
+<!-- EVIDENCE SECTION -->
+<section id="evidence" class="fade-in">
+  <div class="section-label">ДОКАЗАТЕЛЬСТВА</div>
+  <h2>Подтверждённые документальные свидетельства</h2>
+  <p class="section-sub">Всё нижеперечисленное — это факты, подтверждённые независимыми сторонними документами, административными актами и первоисточниками. Ничто не основано на заявлениях самой семьи Хасимото.
+  </p>
+
+  <div class="evidence-grid">
+    <div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ Подтверждённый факт</div>
+      <div class="evidence-year">1874 г.</div>
+      <h3>Прошение о возврате наследственного жалованья — официальное признание государственного органа</h3>
+      <p>Скреплено административными печатями двух заместителей старосты деревни. Государство независимо подтвердило статус Хасимото Хэйсаку — единственного сидзоку в деревне Хоссин-ин. Наследственное жалованье составляло около 19% дохода владения Итидзё-ин.</p>
+      <div class="evidence-source">Хранится в Библиотечно-информационном центре префектуры Нара / ID пленки: 811013157</div>
+    </div>
+
+<div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ Подтверждённый факт</div>
+      <div class="evidence-year">1496 г.</div>
+      <h3>Дайдзё-ин дзися дзацудзики — запись о приёмном сыне (юси)</h3>
+      <p>«Братья Кирино, Сайондзи и Хасимото как юси». В официальном дневнике мондзэки храма Кофуку-дзи «Хасимото» независимо зафиксирован как приёмный сын монахини Нисинотоин. Современный источник, исключающий позднейшие подделки.</p>
+      <div class="evidence-source">Дайдзё-ин дзися дзацудзики, том 11 (Мэйо, 5-й год)</div>
+    </div>
+
+    <div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ Подтверждённый факт</div>
+      <div class="evidence-year">1491 г.</div>
+      <h3>Тюнагон Хасимото — запись о главном распорядителе праздника Касуга</h3>
+      <p>«Тюнагон Хасимото» записан как главный распорядитель праздника в святилище Касуга-тайся (родовое святилище клана Фудзивара). Должность и дата полностью совпадают с Хасимото Санэёри (гон-тюнагон в годы Энтоку).</p>
+      <div class="evidence-source">Дайдзё-ин дзися дзацудзики, том 10 (Энтоку, 3-й год)</div>
+    </div>
+
+    <div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ Подтверждённый факт</div>
+      <div class="evidence-year">1582 г.</div>
+      <h3>Дневник Тамон-ин — запись подлинного имени Хасимото Яроку</h3>
+      <p>В 10-м году Тэнсё (1582) Хасимото Яроку записан под подлинным именем как заведующий хранилищем (ношо) храма Хоссин-ин. Запись оставлена в независимом дневнике монаха Эйсюна, не связанного с семьёй Хасимото.</p>
+      <div class="evidence-source">Дневник Тамон-ин, том 5 (Тэнсё, 10-й год)</div>
+    </div>
+
+    <div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ Подтверждённый факт</div>
+      <div class="evidence-year">1415–1427 гг.</div>
+      <h3>Хоссин-ин Дзицухиро — укоренение линии Фудзивара Хоккэ Канъин на данной земле</h3>
+      <p>Монах Дзицухиро из линии Муромати/Кинсуэ обосновался в Хоссин-ин. Урожай с поля Рокутан в Ёкота-сё (4 коку 8 то) полностью совпадает с записями 1492 года, что подтверждает институциональную преемственность.</p>
+      <div class="evidence-source">Исследования по истории средневековых японских поместий / Большой словарь японских топонимов Кадокава</div>
+    </div>
+
+    <div class="evidence-card verified fade-in">
+      <div class="evidence-badge">✅ Подтверждённый факт</div>
+      <div class="evidence-year">1692 г.</div>
+      <h3>Сёряку-дзи «Хаси-но-ин» и «Хаси-но-бо» — официальные записи</h3>
+      <p>«Хаси-но-ин» и «Хаси-но-бо» значатся как официальные подхрамы в ревизских книгах храмов и святилищ сёгуната и княжества. Аудиторская запись, составленная третьей стороной.</p>
+      <div class="evidence-source">Ямато сирё, том 1 (Ревизские книги храмов и святилищ 5-го года Гэнроку) / Парламентская библиотека 348-226イ</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TIMELINE SECTION -->
+<div class="proof-section" id="timeline">
+  <div class="proof-inner">
+    <div class="section-label">ХРОНОЛОГИЧЕСКОЕ ДОКАЗАТЕЛЬСТВО</div>
+    <h2>Цепь доказательств на протяжении 600 лет</h2>
+    <p class="section-sub">Независимые сторонние источники из каждой эпохи подтверждают непрерывность семьи Хасимото на одном месте — в Хоссин-ин.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">Оэй 22–34 (1415–1427)</div>
+        <div class="t-title">Хоссин-ин Дзицухиро — линия Фудзивара Хоккэ Канъин укореняется в Хоссин-ин</div>
+        <p class="t-body">Монах Дзицухиро из линии Муромати/Кинсуэ действовал как заведующий хранилищем и возделыватель поля Рокутан в Ёкота-сё в Хоссин-ин. Первый случай укоренения на этой земле человека с родословной столичной придворной аристократии.</p>
+        <span class="t-tag v">✅ Подтверждено</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">Косё 2 (1456)</div>
+        <div class="t-title">Тёдзицу (Дзэнканбо) — подписывает клятвенное обязательство Дайдзё-ин гобо-тюсю</div>
+        <p class="t-body">Поставил печать вторым подписавшимся под письменной клятвой общины Дайдзё-ин гобо-тюсю. В независимом индексе, составленном третьей стороной, значится как самостоятельное лицо, отличное от семьи Цудзи.</p>
+        <span class="t-tag v">✅ Подтверждено</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">Энтоку 3 (1491)</div>
+        <div class="t-title">Тюнагон Хасимото — исполняет обязанности главного распорядителя праздника Касуга</div>
+        <p class="t-body">Записан как главный распорядитель в святилище Касуга-тайся, родовом святилище клана Фудзивара. Подтверждено соответствие с Хасимото Санэёри (семья Хасимото линии Сайондзи).</p>
+        <span class="t-tag v">✅ Подтверждено</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">Мэйо 5 (1496)</div>
+        <div class="t-title">«Хасимото» — служит в качестве юси (приёмного сына) монахини Нисинотоин и Итидзё Цунэсукэ</div>
+        <p class="t-body">«Братья Кирино, Сайондзи и Хасимото как юси». Факт службы Левому министру в качестве приёмного сына монахини Нисинотоин зафиксирован в официальном дневнике мондзэки храма Кофуку-дзи.</p>
+        <span class="t-tag v">✅ Подтверждено (независимая верификация по индексу, апрель 2026 г.)</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">Тэнсё 10 (1582)</div>
+        <div class="t-title">Хасимото Яроку — подлинное имя записано в дневнике Тамон-ин</div>
+        <p class="t-body">Появляется как заведующий хранилищем в Хоссин-ин в дневнике монаха, не связанного с семьёй Хасимото. В том же году Хасимото Сама также записан как нэги (синтоистский жрец).</p>
+        <span class="t-tag v">✅ Подтверждено</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">Гэнроку 5 (1692)</div>
+        <div class="t-title">«Хаси-но-ин» и «Хаси-но-бо» — официальная запись в ревизских книгах храмов и святилищ</div>
+        <p class="t-body">Зарегистрированы как正式的 подхрамы в официальных ревизских книгах сёгуната и княжества. Независимое доказательство, восполняющее связь с 1582 по 1647 год.</p>
+        <span class="t-tag v">✅ Подтверждено</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">Каэй 3 (1850)</div>
+        <div class="t-title">Хасимото Хэйсаку — подлинное имя записано как «тосиёри (тигё)» в деревенском документе</div>
+        <p class="t-body">Записан как отправитель «тосиёри (тигё) Хэйсаку» в прошении о помощи во время голода. Независимое современное доказательство за 24 года до Прошения о возврате наследственного жалованья.</p>
+        <span class="t-tag v">✅ Подтверждено</span>
+      </div>
+
+      <div class="timeline-item verified fade-in">
+        <div class="t-year">Мэйдзи 7 (1874)</div>
+        <div class="t-title">Прошение о возврате наследственного жалованья — окончательное административное подтверждение государством</div>
+        <p class="t-body">Государственный орган подтвердил сословный статус сидзоку Хасимото Хэйсаку, скрепив печатями двух заместителей старосты деревни. Единственный сидзоку в деревне Хоссин-ин. Наследственное жалованье составляло около 19% дохода владения Итидзё-ин.</p>
+        <span class="t-tag v">✅ Подтверждено</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WARNING SECTION -->
+<section id="warning" style="max-width:100%; padding: 0 4vw 5rem;">
+  <div class="warning-section" style="max-width:1100px; margin: 0 auto;">
+    <div class="section-label" style="color:var(--crimson);">ПРЕДУПРЕЖДЕНИЕ</div>
+    <h2>Ущерб третьим лицам, наносимый голословными генеалогическими притязаниями</h2>
+    <p style="font-family:'Noto Sans JP',sans-serif; font-size:0.85rem; color:rgba(13,13,13,0.65); line-height:2; max-width:600px;">Данный сайт опубликован не для защиты авторитета семьи Хасимото, а <strong>с целью защиты третьих лиц, терпящих убытки от утверждений, лишённых исторических доказательств</strong>.
+    </p>
+    <div class="warning-grid">
+      <div class="warning-item">
+        <div class="warning-icon">🗳</div>
+        <h4>Введение в заблуждение избирателей</h4>
+        <p>Бездоказательная ссылка на знатное происхождение может использоваться в предвыборных бюллетенях и выступлениях как основание для доверия, что способно исказить рациональное суждение избирателей.</p>
+      </div>
+      <div class="warning-item">
+        <div class="warning-icon">🏪</div>
+        <h4>Введение в заблуждение потребителей и контрагентов</h4>
+        <p>Бездоказательное наделение авторитетом в рекламе предприятий, товаров или услуг может вызвать проблемы в соответствии с Законом о необоснованных премиях и вводящих в заблуждение представлениях и Законом о предотвращении недобросовестной конкуренции.</p>
+      </div>
+      <div class="warning-item">
+        <div class="warning-icon">⚖️</div>
+        <h4>Ущерб конкурентам</h4>
+        <p>Добросовестные предприниматели могут быть поставлены в условия неравной конкуренции с соперниками, прикрывающимися ложным авторитетом.</p>
+      </div>
+      <div class="warning-item">
+        <div class="warning-icon">📚</div>
+        <h4>Искажение исторических фактов</h4>
+        <p>Повторение и распространение безосновательных генеалогических утверждений способно подтачивать общественное историческое сознание.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MULTILINGUAL BAR -->
+<div class="multilingual-bar">
+  <span>🌐 Другие языки / Доступно на:</span>
+  <a href="index.html">Japanese</a>
+  <a href="index-en.html">English</a>
+  <a href="index-ger.html">Deutsch</a>
+  <a href="index-french.html">Français</a>
+    <a href="index-korea.html">Korea</a>
+      <a href="index-portuguese.html">Portuguese</a>
+  <a href="index-spanish.html">Español</a>
+  <a href="index-china.html">中文</a>
+  <a href="index-arabic.html">arabic</a>
+</div>
+
+<!-- ============================================================
+      Раздел Условия использования — fujiwarashi.org
+      Использование: Вставьте этот блок целиком непосредственно перед </main>
+                     или сразу перед подвалом.
+      CSS: Добавьте приведённый ниже блок <style> в существующую таблицу стилей.
+     ============================================================ -->
+
+<section id="terms" class="terms-section">
+  <div class="terms-inner">
+
+    <div class="section-label">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ</div>
+    <h2 class="terms-heading">Условия использования</h2>
+    <p class="terms-meta">Утверждены: 15 апреля 2026 г. — Семья Хасимото / fujiwarashi.org</p>
+
+    <!-- Статья 1 -->
+    <div class="terms-article">
+      <div class="terms-article-num">Статья 1</div>
+      <h3 class="terms-article-title">Цель и характер сайта</h3>
+      <p>Настоящий сайт (fujiwarashi.org, далее именуемый «Сайт») управляется семьёй Хасимото (далее — «Администрация») с единственной целью — официального опубликования генеалогических фактов, основанных на первоисточниках, административных документах и независимых документах третьих лиц. Содержимое, публикуемое на Сайте, позиционируется как запись исторических фактов в академическом, социальном и правовом контексте.</p>
+    </div>
+
+    <!-- Статья 2 -->
+    <div class="terms-article">
+      <div class="terms-article-num">Статья 2</div>
+      <h3 class="terms-article-title">Авторские права и интеллектуальная собственность</h3>
+      <p>Авторские права на тексты, иллюстрации, генеалогические схемы, HTML-структуру и редакционные компиляции (далее — «Контент»), размещённые на Сайте, принадлежат Администрации. При этом в отношении изображений первоисточников, хранящихся в таких учреждениях, как Национальная парламентская библиотека и Информационно-библиотечный центр префектуры Нара, приоритет имеют правила использования, установленные соответствующими учреждениями.</p>
+      <ul class="terms-list">
+        <li>Цитирование в личных или образовательных целях допускается при условии явного указания источника (fujiwarashi.org).</li>
+        <li>Несанкционированное воспроизведение, изменение или присвоение в коммерческих целях, в рамках избирательных кампаний или для утверждения авторитета запрещено.</li>
+        <li>Использование Контента Сайта в контексте, подкрепляющем необоснованные генеалогические притязания, запрещено как использование, выходящее за пределы установленной цели.</li>
+      </ul>
+    </div>
+
+    <!-- Статья 3 -->
+    <div class="terms-article">
+      <div class="terms-article-num">Статья 3</div>
+      <h3 class="terms-article-title">Примечания относительно цитирования и повторного использования источников</h3>
+      <p>Исторические источники и доказательная информация, представленные на Сайте, отредактированы и систематизированы <strong>исключительно с целью подтверждения</strong> генеалогических фактов семьи Хасимото. Любые действия третьих лиц по извлечению данной информации из контекста и её повторному использованию в качестве основы для утверждения иных родословных, коммерческого продвижения, политической легитимизации или аналогичных целей могут повлечь юридические последствия в соответствии с Законом о предотвращении недобросовестной конкуренции, Законом о необоснованных премиях и вводящих в заблуждение представлениях или иными применимыми законами и нормативными актами.</p>
+    </div>
+
+    <!-- Статья 4 -->
+    <div class="terms-article">
+      <div class="terms-article-num">Статья 4</div>
+      <h3 class="terms-article-title">Запрещённые действия</h3>
+      <p>Пользователям запрещается совершать следующие действия:</p>
+      <ul class="terms-list">
+        <li>Изменение или фальсификация Контента Сайта и его распространение под видом официальной публикации Администрации.</li>
+        <li>Цитирование или повторное использование информации с Сайта с целью подкрепления или оправдания генеалогических притязаний, не имеющих документального обоснования.</li>
+        <li>Несанкционированный доступ к Сайту, перегрузка сервера, массовый сбор данных путём сканирования (crawling) или иные действия, создающие технические помехи.</li>
+        <li>Введение в заблуждение третьих лиц путём присвоения наименования Администрации или URL-адреса Сайта.</li>
+        <li>Иные действия, наносящие ущерб законным правам и интересам Администрации, а также интересам третьих лиц.</li>
+      </ul>
+    </div>
+
+    <!-- Статья 5 -->
+    <div class="terms-article">
+      <div class="terms-article-num">Статья 5</div>
+      <h3 class="terms-article-title">Отказ от ответственности</h3>
+      <p>Администрация не гарантирует полноту, актуальность или пригодность информации, размещённой на Сайте, для какой-либо конкретной цели. Содержание Сайта основано на текущей интерпретации доступных первоисточников и может обновляться по мере обнаружения новых источников или прогресса в их изучении. Администрация не несёт ответственности за ущерб, возникший в результате просмотра или использования Сайта, за исключением случаев умысла или грубой неосторожности.</p>
+    </div>
+
+    <!-- Статья 6 -->
+    <div class="terms-article">
+      <div class="terms-article-num">Статья 6</div>
+      <h3 class="terms-article-title">Внешние ссылки и цитируемые источники</h3>
+      <p>Сайт цитирует материалы, хранящиеся и публично доступные в официальных учреждениях, таких как Национальная парламентская библиотека, Информационно-библиотечный центр префектуры Нара, святилище Касуга Тайся и храм Сёряку-дзи. Администрация не несёт ответственности за содержание сайтов или материалов этих внешних учреждений. Условия использования и положения об авторских правах внешних сайтов, на которые ведут ссылки, регулируются правилами, установленными соответствующими учреждениями.</p>
+    </div>
+
+    <!-- Статья 7 -->
+    <div class="terms-article">
+      <div class="terms-article-num">Статья 7</div>
+      <h3 class="terms-article-title">Изменение Условий</h3>
+      <p>Администрация оставляет за собой право изменять настоящие Условия без предварительного уведомления в связи с изменениями в законодательстве, социальной обстановке, прогрессом в исследовании источников или иными обстоятельствами. Изменённые Условия вступают в силу с момента их размещения на данной странице. Продолжение использования Сайта после внесения изменений означает согласие с изменёнными Условиями.</p>
+    </div>
+
+    <!-- Статья 8 -->
+    <div class="terms-article">
+      <div class="terms-article-num">Статья 8</div>
+      <h3 class="terms-article-title">Применимое право и подсудность</h3>
+      <p>Настоящие Условия толкуются в соответствии с законодательством Японии. Все споры, возникающие в связи с использованием Сайта, подлежат разрешению в Окружном суде Нара в качестве суда первой инстанции, которому стороны предоставляют исключительную договорную подсудность.</p>
+    </div>
+
+    <!-- Блок правового уведомления -->
+    <div class="terms-legal-box">
+      <span class="terms-legal-icon">⚖️</span>
+      <div>
+        <strong>Правовое уведомление</strong>: Настоящий Сайт представляет собой официальную позицию, публично заявленную семьёй Хасимото на основе принципов видимости права и добросовестности. Администрация оставляет за собой право принять необходимые правовые меры против любых притязаний на авторитет или получение экономических или социальных выгод, основанных на генеалогических утверждениях, не подкреплённых историческими источниками.
+      </div>
+    </div>
+
+    <p class="terms-footer-note">© Семья Хасимото 2026 — fujiwarashi.org　По вопросам, касающимся настоящих Условий, обращайтесь к информации, опубликованной на Сайте.</p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Дом Хасимото | Официальная генеалогия Фудзивара</div>
+      <p>Этот сайт является официальной позицией Дома Хасимото. Все указанные источники основаны на независимых документах третьих лиц, административных записях или первоисточниках, которые можно проверить, в частности, в Национальной парламентской библиотеке.</p>
+      <br>
+      Mail：<a href="mailto:info@fujiwarashi.org">info@fujiwarashi.org</a>
+      <p>© Дом Хасимото 2026 — fujiwarashi.org</p>
+    </div>
+    <div class="footer-links">
+      <a href="index-russian2.html">📄 Подробная версия (полный текст)</a>
+  <a href="index.html">🇯🇵Japanese</a>      
+<a href="index-en.html">🌐 English version</a>
+      <a href="#evidence">📜 Список доказательств</a>
+      <a href="#timeline">📅 Хронология</a>
+      <a href="#warning">⚠️ Предупреждение</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Sticky nav
+const stickyNav = document.getElementById('stickyNav');
+window.addEventListener('scroll', () => {
+  stickyNav.classList.toggle('visible', window.scrollY > window.innerHeight * 0.8);
+});
+
+// Fade in on scroll
+const fadeEls = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+    }
+  });
+}, { threshold: 0.1 });
+fadeEls.forEach(el => observer.observe(el));
+
+// Smooth anchor
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "547f76c41a4f4065bf3b1f312dd3f727"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
